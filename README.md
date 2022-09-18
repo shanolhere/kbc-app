@@ -34,7 +34,7 @@ Demo link :  https://kbc-quiz.netlify.app/
 ## **What we want to implement in Future:**
 1. Adding a timer.
 2. Enabling green color when the selected answer is correct.
-3. Adding Leaderboard page by storing the usernames in localStorage.
+3. Adding Leaderboard page & storing the usernames in localStorage.
 
 ## **Team "404 Not Found"**
 

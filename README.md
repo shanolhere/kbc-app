@@ -16,11 +16,13 @@ Demo link :  https://kbc-quiz.netlify.app/
 
 <br/>
 
-
+![KBC Quiz Success Demo](../assets/kbcsuccess.gif)
+<br/>
+![KBC Quiz Fail Demo](../assets/kbcfail.gif)
 
 <br/>
 
-##### **What we did in this project:**
+## **What we did in this project:**
 
 1. Collaborating with people and listening to one's ideas/views.
 2. Enabling red color when the user selected answer is Wrong.
@@ -29,12 +31,12 @@ Demo link :  https://kbc-quiz.netlify.app/
 5. Displaying score.
 6. Made completely responsive.
 
-##### **What we want to implement in Future:**
+## **What we want to implement in Future:**
 1. Adding a timer.
 2. Enabling green color when the selected answer is correct.
 3. Adding Leaderboard page by storing the usernames in localStorage.
 
-##### **Team "404 Not Found"**
+## **Team "404 Not Found"**
 
 - **Manasa**  - [Manasa Ramreddy Mandalreddy](https://github.com/Manasa1013)
 - **Sabiya** - [Sabiya Tabassum](https://github.com/shanolhere)

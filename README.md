@@ -1,4 +1,4 @@
-# Crework Hackathon Project - KBC Quiz-app - Made by Team "404 Not Found"
+# Crework Hackathon Project 1 - KBC Quiz-app - Made by Team "404 Not Found"
 
 A simple quiz app which tests your knowledge in many topics and shows your score.
 Inspired from famous KBC game show.

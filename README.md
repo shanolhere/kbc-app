@@ -16,9 +16,9 @@ Demo link :  https://kbc-quiz.netlify.app/
 
 <br/>
 
-![KBC Quiz Success Demo](../assets/kbcsuccess.gif)
+![KBC Quiz Success Demo](https://github.com/shanolhere/kbc-app/blob/master/assets/kbcsuccess.gif)
 <br/>
-![KBC Quiz Fail Demo](../assets/kbcfail.gif)
+![KBC Quiz Fail Demo](https://github.com/shanolhere/kbc-app/blob/master/assets/kbcfail.gif)
 
 <br/>
 

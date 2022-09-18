@@ -117,7 +117,7 @@ function displayNextQues(id){
     <div class="score-details">
 
     <img src="./assets/trophy.jfif" alt="trophy"/>
-    <p>You score: <span>${score}</span></p>
+    <p>You won: <span>${score}</span></p>
     <a href="./index.html">Play Again</a>
     </div>`
   }

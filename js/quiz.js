@@ -1,6 +1,3 @@
-// import { nameVal } from './script.js'
-// console.log(nameVal);
-
 const myQuestions = [
   {
     correctAnswer:"A Chick",
@@ -55,7 +52,7 @@ const myQuestions = [
 }];
 
 
-
+const name = prompt("Enter name:")
 
 const timer = document.querySelector(".timer");
 const time = document.querySelector(".time");
@@ -68,6 +65,10 @@ const quizAnswers = document.querySelectorAll('.quiz-answer');
 const prices = document.querySelectorAll('.price');
 
 const scoreValue = document.querySelector('.scoreValue');
+const nameValue = document.querySelector('.nameValue');
+nameValue.innerHTML = name;
+
+//timer functionality
 // var timeleft = 25;
 // var downloadTimer = setInterval(function(){
 //   if(timeleft <= 0){
@@ -87,44 +88,36 @@ let flag = false;
 
 const intro = new Audio('./sounds/Kaun Banega Crorepati.mp3');
 const audio = new Audio('./sounds/play.mp3');
+
 //onloading starting audio plays
 window.addEventListener('load', audio.play())
 function displayNextQues(id){
 
    if(id<myQuestions.length){
 
-    //const quizQuestion = document.querySelector('.quiz-question');
     quizQuestion.innerHTML =  myQuestions[id].question;
 
-    //const quizAnswer = document.querySelectorAll('.quiz-answer');
     const quizAnswerArray = [...myQuestions[id].answers];
 
-     // quizAnswerArray.push(myQuestions[id].answers.a)
-     // quizAnswerArray.push(myQuestions[id].answers.b)
-     // quizAnswerArray.push(myQuestions[id].answers.c)
-     // quizAnswerArray.push(myQuestions[id].answers.d)
-     //console.log(quizAnswerArray)
-
-    //console.log(quizAnswerArray)
     for(let j=0;j<quizAnswers.length;j++){
       quizAnswers[j].innerHTML= quizAnswerArray[j]
     }
 
     prices[id].style.background = "#C9A02A";
-    //score = prices[id].textContent;
+
   }
   else{
     quizQuestion.style.display="none";
     answersContainer.style.display="none";
-    timer.style.display="none"
+    //timer.style.display="none"
     audio1.pause();
     intro.play();
-    intro.loop = false;
+    //intro.loop = false;
     quizContainer.innerHTML = `
     <div class="score-details">
 
     <img src="./assets/trophy.jfif" alt="trophy"/>
-    <p>You score: <span>${score}</span></p>
+    <p>You won: <span>${score}</span></p>
     <a href="./index.html">Play Again</a>
     </div>`
   }
@@ -149,7 +142,6 @@ function checkAnswer(id, answerSelected){
        score=score;
        scoreValue.innerHTML = score;
      }
-     //console.log(id,answerSelected,flag)
      return [score,id,flag]
 }
 
@@ -162,7 +154,7 @@ function addActive(id){
 
 
 displayNextQues(id);
-//audio1.play()
+
 const audio1= new Audio('./sounds/wait.mp3');
 const audio2= new Audio('./sounds/correct.mp3');
 const audio3= new Audio('./sounds/wrong.mp3');
@@ -173,19 +165,20 @@ quizAnswers.forEach((answer)=> {
 
     //store answer
     let answerSelected = e.target.textContent;
-    console.log(answerSelected)
+    //console.log(answerSelected)
 
 
     if(answerSelected){
     [score,id,flag]  = checkAnswer(id,answerSelected)
-    console.log(score,id,flag,e.target);
+    //console.log(score,id,flag,e.target);
 
     if(flag){
       audio1.pause();
       audio2.play();
-      //setInterval(()=> {e.target.style.background = "green"},2000)
-      //setInterval(()=> {e.target.style.background = "rgb(90,47,120)"},10000)
+      // setInterval(()=> {e.target.style.background = "green"},1000)
+      // setInterval(()=> {e.target.style.background = "rgb(90,47,120)"},3000)
       //e.target.style.background = "green"
+
       id++;
       setInterval(()=> {
         audio1.play()
@@ -201,7 +194,7 @@ quizAnswers.forEach((answer)=> {
       setInterval(()=> {
         e.target.style.background = "red"},1000)
       id=100;
-      setInterval(()=> {displayNextQues(id);},4000)
+      setInterval(()=> {displayNextQues(id);},6000)
     }
     }
 

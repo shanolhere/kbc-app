@@ -3,7 +3,7 @@
 A simple quiz app which tests your knowledge in many topics and shows your score.
 Inspired from famous KBC game show.
 
-<h3>Rules for KBC Quiz game:</h3>
+<h3>Flow of the game:</h3>
 <ul>
   <li>There are 10 Questions to answer. </li>
   <li>If the answer is correct, you will go to next question.</li>
